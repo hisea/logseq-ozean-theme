@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Noto+Sans+SC&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&#9da2a8=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Sans+SC&family=Recursive:wght@400;600&display=swap");
 @font-face {
   font-family: "Only Emoji";
   src: local("Apple Color Emoji"), local("Android Emoji"), local("Segoe UI Emoji"), local("Segoe UI");
@@ -8,7 +8,7 @@
 :root {
   --oz-text-size: 16px;
   --oz-line-height: 1.6;
-  --ls-font-family: "Only Emoji", "Noto Sans", "Noto Sans SC", sans-serif;
+  --ls-font-family: "Only Emoji", "Inter", "Noto Sans SC", sans-serif;
   --oz-page-title-font-family: var(--ls-font-family);
   --oz-code-font-family: "Hack", monospace;
 }
@@ -24,10 +24,6 @@ body {
 
 textarea {
   line-height: var(--oz-line-height);
-}
-
-i {
-  font-family: "Only Emoji", "Noto Sans SC", sans-serif;
 }
 
 /*****************************************
@@ -121,7 +117,7 @@ i {
   color: rgb(91, 223, 223) !important;
 }
 .cm-s-solarized span.cm-comment {
-  color: var(--base0F);
+  color: var(--base03);
 }
 .cm-s-solarized span.cm-string,
 .cm-s-solarized span.cm-string-2 {
@@ -143,7 +139,7 @@ i {
   color: var(--base08);
 }
 .cm-s-solarized span.cm-keyword {
-  color: var(--base08);
+  color: var(--base0E);
 }
 .cm-s-solarized span.cm-atom {
   color: var(--base0E);
@@ -244,21 +240,21 @@ a.priority {
 a[priority=A]::before,
 a.priority[href="#/page/A" i]:before {
   content: "A";
-  background: var(--ct-priority-a-color);
+  background: var(--oz-priority-a-color);
   color: #fff;
 }
 
 a[priority=B]::before,
 a.priority[href="#/page/B" i]:before {
   content: "B";
-  background: var(--ct-priority-b-color);
+  background: var(--oz-priority-b-color);
   color: #fff;
 }
 
 a[priority=C]::before,
 a.priority[href="#/page/C" i]:before {
   content: "C";
-  background: var(--ct-priority-c-color);
+  background: var(--oz-priority-c-color);
   color: #fff;
 }
 
@@ -337,7 +333,7 @@ html[data-theme=dark] #app-container::before {
 
 .dark-theme,
 html[data-theme=dark] {
-  --base00: #1B2B34;
+  --base00: #303030;
   --base01: #343D46;
   --base02: #4F5B66;
   --base03: #65737E;
@@ -349,7 +345,7 @@ html[data-theme=dark] {
   --base09: #F99157;
   --base0A: #FAC863;
   --base0B: #b7efb0;
-  --base0C: #2dece2;
+  --base0C: #4bada9;
   --base0D: #6699CC;
   --base0E: #C594C5;
   --base0F: #AB7967;
@@ -365,28 +361,44 @@ html[data-theme=dark] {
   --oz-green: var(--base0B);
   --oz-blue: var(--base0D);
   --oz-cyan: var(--base0C);
-  --ct-warning-color: var(--oz-red);
-  --ct-success-color: var(--oz-bright-green);
-  --ct-highlight-color: var(--oz-bright-cyan);
-  --ct-priority-a-color: var(--oz-red);
-  --ct-priority-b-color: var(--oz-orange);
-  --ct-priority-c-color: var(--oz-yellow);
-  --color-level-1: #f8f9fa;
-  --color-level-2: #e9ecef;
-  --color-level-3: #dee2e6;
-  --color-level-4: #b9bcbe;
-  --color-level-5: #aaaeb4;
-  --color-level-6: #9da2a8;
-  --ls-primary-background-color: var(--base01);
-  --ls-secondary-background-color: var(--base02);
+  --oz-primary-color:var(--base0D);
+  --oz-secondary-color: var(--base06);
+  --oz-warning-color: var(--oz-red);
+  --oz-success-color: var(--oz-bright-green);
+  --oz-highlight-color: var(--oz-bright-cyan);
+  --oz-priority-a-color: var(--oz-red);
+  --oz-priority-b-color: var(--oz-orange);
+  --oz-priority-c-color: var(--oz-yellow);
+  --color-level-1: var(--base00);
+  --color-level-2: var(--base01);
+  --color-level-3: var(--base02);
+  --color-level-4: var(--base03);
+  --color-level-5: var(--base04);
+  --color-level-6: var(--base05);
+  --ls-primary-background-color: var(--base00);
+  --ls-secondary-background-color: var(--base01);
   --ls-tertiary-background-color: var(--base03);
   --ls-quaternary-background-color: var(--base04);
-  --oz-codeblock-background-color: var(--base05);
+  --oz-codeblock-background-color: var(--base02);
   --ls-border-color: var(--ls-tertiary-background-color);
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
   --ls-primary-text-color: var(--base07);
   --ls-secondary-text-color: var(--base07);
   --ls-title-text-color: var(--base07);
+  --ct-bold-color: #000;
+  --ls-link-text-color: var(--oz-primary-color);
+  --ls-link-ref-text-color: var(--oz-primary-color);
+  --ls-link-ref-text-hover-color: var(--oz-primary-color);
+  --ls-active-primary-color: var(--oz-primary-color);
+  --ls-active-secondary-color: var(--oz-secondary-color);
+  --ls-external-link-color: var(--oz-secondary-color);
+  --ls-guideline-color: var(--ls-tertiary-background-color);
+  --ls-block-bullet-color: var(--ls-tertiary-background-color);
+  --ls-bullet-closed-color: var(--ls-secondary-text-color);
+  --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
+  --ls-icon-color: var(--ls-primary-text-color);
+  --ls-page-properties-background-color: var(--ls-tertiary-background-color);
+  --ls-selection-color: #fff;
 }
 
 .white-theme,
@@ -406,7 +418,7 @@ html[data-theme=white] {
   --base0A: #e8bf2d;
   --base0B: #7fc06e;
   --base0D: #1d74ae;
-  --base0C: #0cbab8;
+  --base0C: #27b4b1;
   --base0E: #9a70a4;
   --base0F: #c43060;
   --ph-highlight-color-blue: var(--base0D);
@@ -421,12 +433,14 @@ html[data-theme=white] {
   --oz-green: var(--base0B);
   --oz-blue: var(--base0D);
   --oz-cyan: var(--base0C);
-  --ct-warning-color: var(--oz-red);
-  --ct-success-color: var(--oz-bright-green);
-  --ct-highlight-color: var(--oz-bright-cyan);
-  --ct-priority-a-color: var(--oz-red);
-  --ct-priority-b-color: var(--oz-orange);
-  --ct-priority-c-color: var(--oz-yellow);
+  --oz-primary-color:var(--base0D);
+  --oz-secondary-color: var(--base06);
+  --oz-warning-color: var(--oz-red);
+  --oz-success-color: var(--oz-bright-green);
+  --oz-highlight-color: var(--oz-bright-cyan);
+  --oz-priority-a-color: var(--oz-red);
+  --oz-priority-b-color: var(--oz-orange);
+  --oz-priority-c-color: var(--oz-yellow);
   --color-level-1: #f8f9fa;
   --color-level-2: #e9ecef;
   --color-level-3: #dee2e6;
@@ -440,6 +454,21 @@ html[data-theme=white] {
   --oz-codeblock-background-color: var(--color-level-1);
   --ls-border-color: var(--ls-tertiary-background-color);
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
+  --ls-primary-text-color: var(--base00);
+  --ls-secondary-text-color: var(--base01);
+  --ls-link-text-color: var(--oz-primary-color);
+  --ls-link-ref-text-color: var(--oz-primary-color);
+  --ls-link-ref-text-hover-color: var(--ct-secondary-color);
+  --ls-active-primary-color: var(--oz-primary-color);
+  --ls-active-secondary-color: var(--oz-secondary-color);
+  --ls-external-link-color: var(--oz-secondary-color);
+  --ls-guideline-color: var(--ls-tertiary-background-color);
+  --ls-block-bullet-color: var(--ls-tertiary-background-color);
+  --ls-bullet-closed-color: var(--ls-secondary-text-color);
+  --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
+  --ls-icon-color: var(--ls-primary-text-color);
+  --ls-page-properties-background-color: var(--ls-tertiary-background-color);
+  --ls-selection-color: #fff;
 }
 
 :root {

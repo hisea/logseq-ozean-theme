@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Noto+Sans+SC&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&#9da2a8=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Noto+Sans+SC&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&#9da2a8=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Sans+SC&family=Recursive:wght@400;600&display=swap');
 @font-face {
   font-family: "Only Emoji";
   src: local("Apple Color Emoji"), local("Android Emoji"),
@@ -44,12 +45,8 @@
 :root {
   --oz-text-size: 16px;
   --oz-line-height: 1.6;
-  // --ls-font-family: "Only Emoji", "Source Sans 3 VF", "Source Han Sans VF", sans-serif;
-  --ls-font-family: "Only Emoji", "Noto Sans", "Noto Sans SC", sans-serif;
-  // --ls-font-family: "Only Emoji", "Inter", "Source Han Sans VF", sans-serif;
+  --ls-font-family: "Only Emoji", "Inter", "Noto Sans SC", sans-serif;
   --oz-page-title-font-family: var(--ls-font-family);
-  // --oz-code-font-family: "Fira Code", monospace;
-  // --oz-code-font-family: "Roboto Mono", monospace;
   --oz-code-font-family: "Hack", monospace;
 }
 
@@ -64,9 +61,4 @@ body {
 
 textarea {
   line-height: var(--oz-line-height);
-}
-
-// Source Han Sans VF does not support italic
-i {
-  font-family: "Only Emoji", "Noto Sans SC", sans-serif;
 }

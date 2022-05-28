@@ -16,7 +16,7 @@ html[data-theme="white"] {
   --base0A: #e8bf2d;
   --base0B: #7fc06e;
   --base0D: #1d74ae;//#14747e;
-  --base0C: #0cbab8;
+  --base0C: #27b4b1;
   --base0E: #9a70a4;
   --base0F: #c43060;
 
@@ -51,15 +51,15 @@ html[data-theme="white"] {
   --oz-blue: var(--base0D);
   --oz-cyan: var(--base0C);
 
-  // --ct-primary-color:var(--base0D);
-  // --ct-secondary-color: var(--base06);
-  --ct-warning-color: var(--oz-red);
-  --ct-success-color: var(--oz-bright-green);
-  --ct-highlight-color: var(--oz-bright-cyan);
+  --oz-primary-color:var(--base0D);
+  --oz-secondary-color: var(--base06);
+  --oz-warning-color: var(--oz-red);
+  --oz-success-color: var(--oz-bright-green);
+  --oz-highlight-color: var(--oz-bright-cyan);
 
-  --ct-priority-a-color: var(--oz-red);
-  --ct-priority-b-color: var(--oz-orange);
-  --ct-priority-c-color: var(--oz-yellow);
+  --oz-priority-a-color: var(--oz-red);
+  --oz-priority-b-color: var(--oz-orange);
+  --oz-priority-c-color: var(--oz-yellow);
 
   --color-level-1: #f8f9fa;
   --color-level-2: #e9ecef;
@@ -78,35 +78,27 @@ html[data-theme="white"] {
 
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
 
-  // --ls-primary-text-color: var(--base00);
-  // --ls-secondary-text-color: var(--base01);
+  --ls-primary-text-color: var(--base00);
+  --ls-secondary-text-color: var(--base01);
 
-  // --ct-bold-color: #000;
+  --ls-link-text-color: var(--oz-primary-color);
+  --ls-link-ref-text-color: var(--oz-primary-color);
+  --ls-link-ref-text-hover-color: var(--ct-secondary-color);
 
-  // --ls-link-text-color: var(--ct-primary-color);
-  // --ls-link-ref-text-color: var(--ct-primary-color);
-  // --ls-link-ref-text-hover-color: var(--ct-secondary-color);
+  --ls-active-primary-color: var(--oz-primary-color);
+  --ls-active-secondary-color: var(--oz-secondary-color);
+  --ls-external-link-color: var(--oz-secondary-color);
 
-  // --ls-active-primary-color: var(--ct-primary-color);
-  // --ls-active-secondary-color: var(--ct-secondary-color);
-  // --ls-external-link-color: var(--ct-secondary-color);
+  --ls-guideline-color: var(--ls-tertiary-background-color);
+  --ls-block-bullet-color: var(--ls-tertiary-background-color);
+  --ls-bullet-closed-color: var(--ls-secondary-text-color);
+  --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
 
-  // --ls-guideline-color: var(--ls-tertiary-background-color);
-  // --ls-block-bullet-color: var(--ls-tertiary-background-color);
-  // --ls-bullet-closed-color: var(--ls-secondary-text-color);
-  // --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
-  // --ct-block-arrow-color: rgb(98, 98, 98);
+  --ls-icon-color: var(--ls-primary-text-color);
 
-  // --ct-page-reference-color: var(--ls-active-primary-color);
+  --ls-page-properties-background-color: var(--ls-tertiary-background-color);
 
-  // --ls-icon-color: var(--ls-primary-text-color);
-
-  // --ct-block-reference-background: var(--color-level-1);
-  // --ct-block-reference-background-hover: var(--color-level-3);
-
-  // --ls-page-properties-background-color: var(--ls-tertiary-background-color);
-
-  // --ls-selection-color: #fff;
+  --ls-selection-color: #fff;
 
   // --ct-header-bg-color: rgba(255, 255, 255, 0.9);
 }

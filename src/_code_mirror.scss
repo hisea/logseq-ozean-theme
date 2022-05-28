@@ -21,7 +21,7 @@
 // }
 
 // .cm-s-solarized div.CodeMirror-selected {
-//   background: var(--ct-primary-color);
+//   background: var(--oz-primary-color);
 //   color: var(--ls-selection-color);
 // }
 
@@ -155,7 +155,7 @@
     color: rgb(91, 223, 223) !important;
   }
   span.cm-comment {
-    color: var(--base0F);
+    color: var(--base03);
   }
   span.cm-string,
   span.cm-string-2 {
@@ -177,7 +177,7 @@
     color: var(--base08);
   }
   span.cm-keyword {
-    color: var(--base08);
+    color: var(--base0E);
   }
   span.cm-atom {
     color: var(--base0E);
