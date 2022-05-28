@@ -15,9 +15,15 @@
 	"scripts": {
 		"build:main": "npx sass src/main.scss main.css --no-source-map",
 		"build": "npm run build:main",
-    "dev": "npx sass --watch src/.:./ --no-source-map"
+		"dev": "npx sass --watch src/.:./ --no-source-map"
 	},
 	"devDependencies": {
+		"@semantic-release/changelog": "^6.0.1",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/npm": "^9.0.1",
 		"sass": "^1.52.1"
+	},
+	"dependencies": {
+		"@semantic-release/exec": "^6.0.3"
 	}
 }
