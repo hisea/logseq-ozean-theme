@@ -1,0 +1,23 @@
+{
+	"name": "logseq-ozean-theme",
+	"author": "hisea",
+	"version": "0.0.1",
+	"description": "A simple and clean theme.",
+	"logseq": {
+		"themes": [
+			{
+				"name": "Ozean Theme",
+				"url": "./main.css"
+			}
+		],
+		"id": "logseq-ozean-theme"
+	},
+	"scripts": {
+		"build:main": "npx sass src/main.scss main.css --no-source-map",
+		"build": "npm run build:main",
+    "dev": "npx sass --watch src/.:./ --no-source-map"
+	},
+	"devDependencies": {
+		"sass": "^1.52.1"
+	}
+}

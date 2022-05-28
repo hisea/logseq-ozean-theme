@@ -1,0 +1,17 @@
+/* Tags */
+a.tag {
+  border: 2px solid var(--oz-cyan);
+  background-color: var(--oz-cyan);
+  color: #fff;
+  padding: 0 4px;
+  border-radius: var(--ct-marker-border-radius);
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 0.8em;
+}
+
+a.tag:hover {
+  opacity: var(--oz-cyan,1);
+  color: #fff;
+  transform: scale(1.1);
+}
