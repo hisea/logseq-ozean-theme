@@ -155,54 +155,52 @@
     color: rgb(91, 223, 223) !important;
   }
   span.cm-comment {
-    color: #a0a0a0;
+    color: var(--base0F);
   }
   span.cm-string,
   span.cm-string-2 {
-    color: #e6c963;
+    color: var(--base0B);
   }
   span.cm-number {
-    color: #978ade;
+    color: var(--base0E);
   }
   span.cm-variable {
-    color: #82aaff;
+    color: var(--base0A);
   }
   span.cm-variable-2 {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--base0D);
   }
   span.cm-def {
-    color: var(--ls-secondary-text-color);
+    color: var(--base09);
   }
   span.cm-operator {
-    color: #f15f60;
+    color: var(--base08);
   }
   span.cm-keyword {
-    color: #f15f60;
+    color: var(--base08);
   }
   span.cm-atom {
-    color: #978ade;
+    color: var(--base0E);
   }
   span.cm-meta {
     color: white;
   }
   span.cm-tag {
-    color: #f07178;
+    color: var(--base08);
   }
-  span.cm-attribute {
-    color: #c792ea;
-  }
+
   span.cm-qualifier {
-    color: #41b394;
+    color: var(--base08);
   }
-  span.cm-property {
-    color: #9bd174;
+  span.cm-attribute, span.cm-property {
+    color: (--base0B);
   }
   span.cm-builtin {
-    color: #45add6;
+    color: var(--base0C);
   }
   span.cm-variable-3,
   span.cm-type {
-    color: orange;
+    color: var(--base09);
   }
 }
 
@@ -212,14 +210,36 @@
   }
   span.cm-string,
   span.cm-string-2 {
-    color: orange;
+    color: var(--base0B);
   }
-  span.cm-variable-2 {
-    color: rgba(0, 0, 0, 0.7);
-  }
-  span.cm-def {
+  // span.cm-variable-2 {
+  //   color: var(--base0D);
+  // }
+  // span.cm-def {
+  //   color:  var(--base09);
+  // }
+  span.cm-meta {
     color: var(--ls-secondary-text-color);
   }
+}
+
+.dark-theme .cm-s-solarized {
+  .CodeMirror-selected {
+    // background-color: var(--base02);
+  }
+  textarea {
+    background: var(--base02);
+  }
+  span.cm-string,
+  span.cm-string-2 {
+    color: var(--base0B);
+  }
+  // span.cm-variable-2 {
+  //   color: var(--base0D);
+  // }
+  // span.cm-def {
+  //   color:  var(--base09);
+  // }
   span.cm-meta {
     color: var(--ls-secondary-text-color);
   }
