@@ -1,0 +1,6 @@
+## [0.0.2](https://github.com/hisea/logseq-ozean-theme/compare/v0.0.1...v0.0.2) (2022-05-28)
+
+
+### Bug Fixes
+
+* clean up comments. ([f38490b](https://github.com/hisea/logseq-ozean-theme/commit/f38490b350ef886f8116656df361f5d14f000250))
