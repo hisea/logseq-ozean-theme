@@ -313,10 +313,10 @@ a.marker-switch:hover {
 a.tag {
   border: 2px solid var(--oz-cyan);
   background-color: var(--oz-cyan);
+  padding: 0 7px;
+  border-radius: 10px;
+  margin: 2px 0;
   color: #fff;
-  padding: 0 4px;
-  border-radius: var(--ct-marker-border-radius);
-  font-weight: 600;
   line-height: 1.4;
   font-size: 0.8em;
 }
@@ -324,7 +324,6 @@ a.tag {
 a.tag:hover {
   opacity: var(--oz-cyan, 1);
   color: #fff;
-  transform: scale(1.1);
 }
 
 html[data-theme=dark] #app-container::before {
