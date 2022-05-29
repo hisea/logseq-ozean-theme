@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/hisea/logseq-ozean-theme/compare/v0.1.0...v0.1.1) (2022-05-29)
+
+
+### Bug Fixes
+
+* add tag font-weight back. ([ea84927](https://github.com/hisea/logseq-ozean-theme/commit/ea84927662e58a8b757999bd436f3cb92ed8d52d))
+
 # [0.1.0](https://github.com/hisea/logseq-ozean-theme/compare/v0.0.3...v0.1.0) (2022-05-29)
 
 
