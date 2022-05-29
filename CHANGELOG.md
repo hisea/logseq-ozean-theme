@@ -1,3 +1,10 @@
+# [0.1.0](https://github.com/hisea/logseq-ozean-theme/compare/v0.0.3...v0.1.0) (2022-05-29)
+
+
+### Features
+
+* Update tag style. ([5890749](https://github.com/hisea/logseq-ozean-theme/commit/5890749e19e4cb3e10d7c44d46cc4ac91aca2915))
+
 ## [0.0.3](https://github.com/hisea/logseq-ozean-theme/compare/v0.0.2...v0.0.3) (2022-05-29)
 
 
