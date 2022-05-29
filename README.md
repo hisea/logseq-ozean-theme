@@ -8,7 +8,7 @@ Features:
 
 - Color pallet inspired by Oceanic Next
 - Badge like markers and tags
-- Font choice to optimize legibilit
+- Font choice to optimize legibility
 
 
 ## Credits
